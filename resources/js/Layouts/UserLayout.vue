@@ -34,9 +34,17 @@ const currentUriPath = window.location.pathname;
                                     Home
                                 </NavLink>
 
-                                <NavLink :href="route('transfer')" :active="route().current('transfer') || currentUriPath.includes('/myaccount/transfer')">
-                                    Send and Request
+                                <NavLink :href="route('send')" :active="route().current('send')">
+                                    Send Money
                                 </NavLink>
+
+                                <NavLink :href="route('cashin')" :active="route().current('cashin')">
+                                    Cash In
+                                </NavLink>
+
+                                <!-- <NavLink :href="route('transfer')" :active="route().current('transfer') || currentUriPath.includes('/myaccount/transfer')">
+                                    Send and Request
+                                </NavLink> -->
                                 <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
                                     Wallet
                                 </NavLink>
